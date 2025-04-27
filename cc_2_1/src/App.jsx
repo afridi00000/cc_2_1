@@ -11,7 +11,7 @@ function App() {
   const fetchTours = async () => {
     setLoading(true);
     try {
-      const res = await fetch('https://course-api.com/react-tours-project');
+      const res = await fetch('https://www.course-api.com/react-tours-project');
       if (!res.ok) throw new Error(`Status ${res.status}`);
       const data = await res.json();
       setTours(data);
